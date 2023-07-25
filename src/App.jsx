@@ -11,7 +11,7 @@ function App() {
     title: 'Batch 41 magic bullet blender from the future',
     price: 129.5,
     description: ' If you send an object like the code above, it will return you an object with a new id. remember that nothing in real will insert into the database. so if you want to access the new id you will get a 404 error.',
-    image: 'https://i.pravatar.cc',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbkWZA4N7aDoblltBPajZ-H8Ts7fRfxQI0_A&usqp=CAU',
     category: 'electronic'
 })
 
