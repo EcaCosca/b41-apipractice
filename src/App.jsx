@@ -85,24 +85,35 @@ function App() {
 
   return (
     <>
-      <h2>Get all products</h2>
-      <button onClick={getAllData}>Click here</button>
-      <h2>Get a single product by ID</h2>
-      <input type="text" onChange={(event)=>getSingleData(Number(event.target.value))}></input>
-      <h2>Create a new product</h2>
-      <button onClick={CreateNewItem}>Click here</button>
-      {
-        data ?
-        data.map(element => 
-          <div id={element.id}>
-            <h2>{element.title}</h2>
-            <p>{element.description}</p>
-            <h4>PRICE: {element.price}</h4>
-            <img src={element.image}/>
-          </div>)
-          :
-          <h3>LOADING</h3>
-      }
+      <div className='container taks-container'>
+        <h2>Get all products</h2>
+        <button onClick={getAllData}>Click here</button>
+      </div>
+
+      <div className='container taks-container'>
+        <h2>Get a single product by ID</h2>
+        <input type="text" onChange={(event)=>getSingleData(Number(event.target.value))}></input>
+      </div>
+
+      <div className='container taks-container'>
+        <h2>Create a new product</h2>
+        <button onClick={CreateNewItem}>Click here</button>
+      </div>
+
+      <div className='container results-container'>
+        {
+          data ?
+          data.map(element => 
+            <div id={element.id}>
+              <h2>{element.title}</h2>
+              <p>{element.description}</p>
+              <h4>PRICE: {element.price}</h4>
+              <img src={element.image}/>
+            </div>)
+            :
+            <h3>LOADING</h3>
+        }
+      </div>
     </>
   )
 }

@@ -40,3 +40,34 @@
 .read-the-docs {
   color: #888;
 }
+
+.container {
+  background-color: rgb(127, 129, 163);
+  border-radius: 5px;
+  margin: 5 5 10 5;
+}
+
+.container button{
+  background-color: rgb(193, 195, 230);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.container input{
+  background-color: rgb(237, 237, 242);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  height: 35px;
+  width: 250px;
+}
+
+.results-container {
+  background-color: rgb(195, 196, 221);
+  border-radius: 5px;
+  margin: 5 5 10 5;
+}
+
+img {
+  width: 500px;
+  border-radius: 35px;
+}
